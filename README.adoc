@@ -1,0 +1,17 @@
+= Build 'n Bump Socket Client
+
+== Background
+
+I am the developer of the PC game https://store.steampowered.com/app/375790/Build_n_Bump/[Build 'n Bump], which features a network mode that requires port forwarding if you want to play online and not just over LAN. Obviously, this has been a sore spot for a lot of players trying to get the achievement for playing every game mode at least once.
+
+A few years ago, I saw that GitHub user euank had created a Node.js project called https://github.com/euank/bnb-bot[bnb-bot] that simulated an online user connecting to your game. Needing to learn Java/Kotlin for my new job, I thought I would tackle the same challenge with a different set of tools.
+
+== How to Use
+
+@TODO
+
+== Further Development
+
+@ TODO
+
+https://github.com/Gottox/socket.io-java-client[socket.io-java-client]
