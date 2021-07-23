@@ -8,10 +8,19 @@ A few years ago, I saw that GitHub user euank had created a Node.js project call
 
 == How to Use
 
-@TODO
+Download the latest JAR file from the https://github.com/clarknielsen/bump-n-socket/releases[releases] tab.
 
-== Further Development
+Make sure the _Build 'n Bump_ game is open first and waiting for a guest to connect. The game will also need to use port 8080, as that port number is hardcoded within the app.
 
-@ TODO
+After the game is prepped, run the following command in the same directory as the JAR file:
 
-https://github.com/Gottox/socket.io-java-client[socket.io-java-client]
+[source,bash]
+----
+java -jar bump-n-socket.jar
+----
+
+== Development
+
+This repo contains the source code if you'd like to further experiment with it. Note that this is a Kotlin project and relies on a non-Maven dependency. You will need to download and build the https://github.com/Gottox/socket.io-java-client[socket.io-java-client] project separately, then add it to the project as an external library.
+
+I've included a very simple test that creates a socket server with the `MockServer` class. This is intended to simulate receiving messages when the game sends a "menu" or "game setup" update. If you can successfully run the test, you should be good to start tinkering!
